@@ -1,0 +1,581 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CB648700-9D6D-4255-94C1-139E82D3E854}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DeMenPhieuLuuKy</RootNamespace>
+    <AssemblyName>DeMenPhieuLuuKy</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Windows 10\Desktop\Bai Tap\DeAnWinform\DeMenPhieuLuuKi\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CutScene\CutScene_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutScene\CutScene_6.Designer.cs">
+      <DependentUpon>CutScene_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutScene\CutScene_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutScene\CutScene_5.Designer.cs">
+      <DependentUpon>CutScene_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutScene\CutScene_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutScene\CutScene_4.Designer.cs">
+      <DependentUpon>CutScene_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutScene\CutScene_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutScene\CutScene_3.Designer.cs">
+      <DependentUpon>CutScene_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutScene\CutScene_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutScene\CutScene_2.Designer.cs">
+      <DependentUpon>CutScene_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CutScene\CutScene_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CutScene\CutScene_1.Designer.cs">
+      <DependentUpon>CutScene_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Difficulty.cs" />
+    <Compile Include="DoiNgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DoiNgu.Designer.cs">
+      <DependentUpon>DoiNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HuongDan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HuongDan.Designer.cs">
+      <DependentUpon>HuongDan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputName.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InputName.Designer.cs">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_3_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_3_1.Designer.cs">
+      <DependentUpon>Level_3_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_3_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_3_2.Designer.cs">
+      <DependentUpon>Level_3_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_4_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_4_1.Designer.cs">
+      <DependentUpon>Level_4_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_5_1.Designer.cs">
+      <DependentUpon>Level_5_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_5_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_5_2.Designer.cs">
+      <DependentUpon>Level_5_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_6_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_6_1.Designer.cs">
+      <DependentUpon>Level_6_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlayerProfile.cs" />
+    <Compile Include="PlayerStat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlayerStat.Designer.cs">
+      <DependentUpon>PlayerStat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\MazePuzzle_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\MazePuzzle_2.Designer.cs">
+      <DependentUpon>MazePuzzle_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\MazePuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\MazePuzzle.Designer.cs">
+      <DependentUpon>MazePuzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\MiniGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\MiniGame.Designer.cs">
+      <DependentUpon>MiniGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\RandomPuzzle.cs" />
+    <Compile Include="Puzzle\ImagePuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\ImagePuzzle.Designer.cs">
+      <DependentUpon>ImagePuzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Puzzle\RememberPuzzle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Puzzle\RememberPuzzle.Designer.cs">
+      <DependentUpon>RememberPuzzle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SaveData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveData.Designer.cs">
+      <DependentUpon>SaveData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TitleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TitleForm.Designer.cs">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_1_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_1_1.Designer.cs">
+      <DependentUpon>Level_1_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_2_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_2_1.Designer.cs">
+      <DependentUpon>Level_2_1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Level_1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Level_1_2.Designer.cs">
+      <DependentUpon>Level_1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CutScene\CutScene_6.resx">
+      <DependentUpon>CutScene_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutScene\CutScene_5.resx">
+      <DependentUpon>CutScene_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutScene\CutScene_4.resx">
+      <DependentUpon>CutScene_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutScene\CutScene_3.resx">
+      <DependentUpon>CutScene_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutScene\CutScene_2.resx">
+      <DependentUpon>CutScene_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CutScene\CutScene_1.resx">
+      <DependentUpon>CutScene_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DoiNgu.resx">
+      <DependentUpon>DoiNgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HuongDan.resx">
+      <DependentUpon>HuongDan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InputName.resx">
+      <DependentUpon>InputName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_3_1.resx">
+      <DependentUpon>Level_3_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_2_1.resx">
+      <DependentUpon>Level_2_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_3_2.resx">
+      <DependentUpon>Level_3_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_4_1.resx">
+      <DependentUpon>Level_4_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_5_1.resx">
+      <DependentUpon>Level_5_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_5_2.resx">
+      <DependentUpon>Level_5_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_6_1.resx">
+      <DependentUpon>Level_6_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlayerStat.resx">
+      <DependentUpon>PlayerStat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\MazePuzzle_2.resx">
+      <DependentUpon>MazePuzzle_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\MazePuzzle.resx">
+      <DependentUpon>MazePuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\MiniGame.resx">
+      <DependentUpon>MiniGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\ImagePuzzle.resx">
+      <DependentUpon>ImagePuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Puzzle\RememberPuzzle.resx">
+      <DependentUpon>RememberPuzzle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SaveData.resx">
+      <DependentUpon>SaveData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TitleForm.resx">
+      <DependentUpon>TitleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_1_1.resx">
+      <DependentUpon>Level_1_1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Level_1_2.resx">
+      <DependentUpon>Level_1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Title_Screen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Leaf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Idle.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Jump.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Run.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Idle_Small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Jump_Small.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Run_Small.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platform_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platform_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platform_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platform_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platform_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Idle_Small_L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Jump_Small_L.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DeMen_Run_Small_L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Speech_Ballon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KienLua_Walk_L.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KienLua_Walk_R.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KienLua_Dead.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snake.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Platform_Big.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cave_Entrance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\X.png" />
+    <None Include="Resources\V.png" />
+    <None Include="Resources\Web.png" />
+    <None Include="Resources\Wooden_Cage.png" />
+    <None Include="Resources\Wood.png" />
+    <None Include="Resources\ChimCoc.gif" />
+    <None Include="Resources\ChuonChuon.gif" />
+    <None Include="Resources\Cave.jpg" />
+    <None Include="Resources\DeMen_Punch.png" />
+    <None Include="Resources\DeMen_Punch_L.png" />
+    <None Include="Resources\DeMen_Super_Punch.gif" />
+    <None Include="Resources\DeMen_Super_Punch_L.gif" />
+    <None Include="Resources\DeMen_Enemy_Idle.gif" />
+    <None Include="Resources\DeMen_Enemy_Idle_L.gif" />
+    <None Include="Resources\DeMen_Enemy_Jump.gif" />
+    <None Include="Resources\DeMen_Enemy_Jump_L.gif" />
+    <None Include="Resources\DeMen_Enemy_Punch.png" />
+    <None Include="Resources\DeMen_Enemy_Punch_L.png" />
+    <None Include="Resources\DeMen_Enemy_Run.gif" />
+    <None Include="Resources\DeMen_Enemy_Run_L.gif" />
+    <None Include="Resources\DeMen_Enemy_Super_Punch.gif" />
+    <None Include="Resources\DeMen_Enemy_Super_Punch_L.gif" />
+    <None Include="Resources\Chi_Nha_Tro.png" />
+    <None Include="Resources\Cave_Spider.jpg" />
+    <None Include="Resources\arrowKeyCap.png" />
+    <None Include="Resources\Dust.gif" />
+    <None Include="Resources\de-men-phieu-luu-ky-tai-ban-2020.jpg" />
+    <None Include="Resources\1.jpg" />
+    <None Include="Resources\2.jpg" />
+    <None Include="Resources\3.jpg" />
+    <None Include="Resources\4.jpg" />
+    <None Include="Resources\5.jpg" />
+    <None Include="Resources\6.jpg" />
+    <None Include="Resources\7.jpg" />
+    <None Include="Resources\8.jpg" />
+    <None Include="Resources\9.jpg" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\4.png" />
+    <None Include="Resources\5.png" />
+    <None Include="Resources\6.png" />
+    <None Include="Resources\7.png" />
+    <None Include="Resources\8.png" />
+    <None Include="Resources\9.png" />
+    <None Include="Resources\A Button.png" />
+    <None Include="Resources\D Button.png" />
+    <None Include="Resources\E Button.png" />
+    <Content Include="Resources\End.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\escKeyCap.png" />
+    <Content Include="Resources\gameTheme_Slow.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Ground_1.png" />
+    <None Include="Resources\Ground_2.png" />
+    <None Include="Resources\Ground_3.png" />
+    <None Include="Resources\Jungle.jpg" />
+    <None Include="Resources\Giun.gif" />
+    <None Include="Resources\Giun_Reverse.gif" />
+    <None Include="Resources\Hand_1.png" />
+    <None Include="Resources\Hand_2.png" />
+    <None Include="Resources\Kids.png" />
+    <None Include="Resources\Nhen_Small.gif" />
+    <None Include="Resources\Nhen_Small_L.gif" />
+    <None Include="Resources\Nhen_Walk.gif" />
+    <None Include="Resources\Ground_blue.png" />
+    <None Include="Resources\Nhen_Rock.png" />
+    <None Include="Resources\lá cây màu tím.gif" />
+    <None Include="Resources\lá cây màu vàng.gif" />
+    <None Include="Resources\lá cây màu xanh.gif" />
+    <None Include="Resources\lá cây mau do.gif" />
+    <None Include="Resources\Home.png" />
+    <None Include="Resources\MazePuzzle.png" />
+    <None Include="Resources\original.jpg" />
+    <None Include="Resources\null.JPG" />
+    <None Include="Resources\original.png" />
+    <Content Include="Resources\P1.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\P2.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\P3.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\P4.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\P5.mp4">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\pKeyCap.png" />
+    <None Include="Resources\playerStat.png" />
+    <Content Include="Resources\player_die.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Rock.png" />
+    <None Include="Resources\Resume.png" />
+    <Content Include="Resources\runNowTheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\SaveIcon.png" />
+    <Content Include="Resources\scareTheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\Smoke_Small.gif" />
+    <None Include="Resources\Smoke.gif" />
+    <Content Include="Resources\smw_gotHit.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\smw_punch.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\spaceKeyCap.png" />
+    <None Include="Resources\stone.gif" />
+    <None Include="Resources\stone big.png" />
+    <None Include="Resources\stone small.png" />
+    <Content Include="Resources\titleScreenTheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\gameTheme.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\smw_coin.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\smw_jump.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\smw_stomp.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
